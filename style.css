@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body
+{
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+main
+{
+    background-color: white;
+    height: auto;
+    border-radius: 15px;
+}
+
+.danser
+{
+    border-radius: 15px 15px 0px 0px;
+    max-width: 100%;
+}
+
+.content
+{
+    margin: auto;
+    background-color: white;
+    max-width: 450px;
+    text-align: center;
+}
+
+.content p, h1
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    color: hsl(224, 23%, 55%);
+}
+
+.blue
+{
+    color: hsl(223, 47%, 23%);
+}
+
+
+/* BLOC PRIX FORMULE */
+.price
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    margin: auto;
+    max-width: 320px;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.price span
+{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.link
+{
+    display: block;
+    color: hsl(245, 75%, 52%);
+}
+
+.link:hover
+{
+    text-decoration: none;
+    color:hsl(245, 62%, 62%);
+}
+
+
+
+/* FOOTER */
+.cta
+{
+    background-color: hsl(245, 75%, 52%);
+    height: auto;
+    max-width: 360px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    box-shadow: hsl(224, 23%, 55%) 0px 5px 10px;
+    transition: .3s ease;
+}
+
+.cta:hover
+{
+    transition: .3s ease;
+    background-color: hsl(245, 62%, 62%);
+}
+
+.cta a
+{
+    display: block;
+    color: hsl(225, 100%, 98%);
+    text-decoration: none;
+}
+
+.cancel a
+{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    transition: .3s ease;
+}
+
+.cancel a:hover
+{
+    transition: .5s ease;
+    color: hsl(245, 75%, 52%);
+}
+
+@media all and (max-width : 420px) 
+{
+    body
+    {
+        background-image: url("./images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+
+    .price, .cta
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+}
